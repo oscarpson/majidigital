@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:map="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/relativemap"
+tools:context=".ZoneMapActivity" >
+    <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+    android:layout_alignParentTop="true"
+    map:cardCornerRadius="2dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Zone Meters"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:textColor="@color/blacksb"
+        android:layout_gravity="center_vertical"/>
+</androidx.cardview.widget.CardView>
+<com.google.android.gms.maps.MapView
+    android:id="@+id/map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+    <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="10dp"
+    android:layout_alignParentBottom="true"
+
+    map:cardCornerRadius="2dp"
+    android:id="@+id/card"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="@dimen/activity_horizontal_margin">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layerxa">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imgprevious"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_previous"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@color/blacksb"
+                android:layout_toRightOf="@id/imgprevious"
+                android:text="Prev"
+                android:id="@+id/txtprev"
+                style="@style/TextAppearance.AppCompat.Body2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+
+                android:id="@+id/txtspname"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/blacksb"
+                style="@style/TextAppearance.AppCompat.Body2"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imgnext"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_nexts"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@color/blacksb"
+                android:layout_toLeftOf="@id/imgnext"
+                android:text="Next"
+                android:id="@+id/txtnext"
+                style="@style/TextAppearance.AppCompat.Body2"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layerxa"
+            android:id="@+id/layera">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Zone"
+                android:id="@+id/txtstypetitle"
+                android:layout_alignParentLeft="true"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/_bright_foreground_disabled_holo_light"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/txtstypename"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:textColor="@color/blacksb"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view"
+            android:layout_below="@id/layera"
+            android:background="@color/blacksb"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:id="@+id/layerb">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Zone desc"
+                android:id="@+id/txthourpay"
+                android:layout_alignParentLeft="true"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/_bright_foreground_disabled_holo_light"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/txthourpayvalue"
+                android:layout_alignParentRight="true"
+
+
+                android:textStyle="bold"
+                android:textColor="@color/blacksb"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/viewb"
+            android:layout_below="@id/layerb"
+            android:background="@color/blacksb"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/viewb"
+            android:id="@+id/layerc">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating:"
+                android:id="@+id/ratingtxt"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/_bright_foreground_disabled_holo_light"
+                android:layout_alignParentLeft="true"/>
+            <RatingBar
+                android:theme="@style/RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingbar"
+                android:layout_alignParentRight="true"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_centerHorizontal="true"
+                android:stepSize="0.1"
+                android:numStars="5"
+                android:rating="3"
+                android:layout_marginTop="5dp"
+                android:isIndicator="true"
+
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/viewc"
+
+            android:layout_below="@id/layerc"
+            android:background="@color/blacksb"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewc"
+            android:visibility="gone"
+            android:id="@+id/layerd">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Time"
+                android:id="@+id/txtstime"
+                android:layout_alignParentLeft="true"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/_bright_foreground_disabled_holo_light"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/txtstimedate"
+                android:layout_alignParentRight="true"
+
+
+                android:textStyle="bold"
+                android:textColor="@color/blacksb"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

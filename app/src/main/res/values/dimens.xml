@@ -1,0 +1,28 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="cornerradaius">3dp</dimen>
+    <dimen name="circularimg">80dp</dimen>
+    <dimen name="textsize">14sp</dimen>
+    <dimen name="textfund">18sp</dimen>
+    <dimen name="margin_main">18dp</dimen>
+    <dimen name="map_fragment">8dp</dimen>
+    <dimen name="texthead">18sp</dimen>
+    <dimen name="maincard">70dp</dimen>
+    <dimen name="textcard">70dp</dimen>
+    <dimen name="cardmargin">5dp</dimen>
+    <dimen name="card_radius">4dp</dimen>
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="margin_inputs">3dp</dimen>
+    <dimen name="margin_bottom">10dp</dimen>
+    <dimen name="TextEdit">25dp</dimen>
+    <dimen name="title_size">18sp</dimen>
+    <dimen name="button_height">30dp</dimen>
+    <dimen name="icon_size">30dp</dimen>
+    <dimen name="height_edittext">48dp</dimen>
+    <dimen name="inpu_layermargin">8dp</dimen>
+    <dimen name="status_view">10dp</dimen>
+    <dimen name="meter_status_margin">5dp</dimen>
+
+</resources>

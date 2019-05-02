@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1882F5</color><!--3F51B5-->
+    <color name="colorPrimaryDark">#1882F9</color>
+    <color name="colorPrimaryb">#008dc7</color>
+    <color name="colorPrimaryDarkb">#009fe1</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="dark_blue">#004561</color>
+    <color name="medium_blue">#007bae</color>
+    <color name="dark_blueb">#003348</color>
+    <color name="hintColor">#1882F5 </color>
+    <color name="blueColor">#269BF6</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="textcolor">#ffffff</color>
+    <color name="blackColor">#000000</color>
+    <color name="grayColor">#BEBEBF</color>
+    <color name="gold">#ff850a</color>
+    <color name="browntint">#8943</color>
+    <color name="purple">#BD3792</color>
+    <color name="red">#E5080B</color>
+    <color name="green">#80B547</color>
+    <color name="background_activity">#e2f7ff</color>
+    <color name="background_activityb">#cff1ff</color>
+    <color name="_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="blacksb">#130202</color>
+    <color name="brownb">#E55B06</color>
+    <color name="brownc">#E56F1E</color>
+</resources>

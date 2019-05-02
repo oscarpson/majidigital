@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MajiDigitalApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="copyright">\u00A9 Copyright MajiDigital Ltd</string>
+    <string name="title_activity_register_user">Register User</string>
+    <string name="title_activity_meter_reading">Meter Reading</string>
+    <string name="title_activity_meter_status">Meter Status</string>
+    <string name="title_activity_zone_map">Map</string>
+    <string name="title_activity_disconnection">Disconnection Activity</string>
+    <string name="title_activity_mpesa_payment">MpesaPayment</string>
+</resources>
